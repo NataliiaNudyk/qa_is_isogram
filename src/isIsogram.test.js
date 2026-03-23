@@ -25,13 +25,13 @@ describe('isIsogram', () => {
     expect(result).toBeFalsy();
   });
 
-  it(`returns false when word contains duplicate letters ignoring case`, () => {
+  it(`returns false for non-adjacent duplicates ignoring case`, () => {
     const result = isIsogram('Adam');
 
     expect(result).toBeFalsy();
   });
 
-  it(`returns false when word contains duplicate letters ignoring case`, () => {
+  it(`returns false for adjacent duplicates ignoring case`, () => {
     const result = isIsogram('Oops');
 
     expect(result).toBeFalsy();
